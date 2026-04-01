@@ -108,11 +108,12 @@ python scripts/quality_score.py Quarto/file.qmd
 
 ## Beamer Custom Environments
 
-<!-- Fill in as you build the first lecture and establish your theme -->
-
-| Environment       | Effect        | Use Case       |
-|-------------------|---------------|----------------|
-| `[your-env]`      | [Description] | [When to use]  |
+| Environment          | Appearance                                  | Use Case                          |
+|----------------------|---------------------------------------------|-----------------------------------|
+| `keybox[Title]`      | Navy title bar (white text), light blue body | Key definitions, core results     |
+| `examplebox[Title]`  | Dark orange title bar (white text), light orange body | Paper examples, empirical cases |
+| `warningbox[Title]`  | Vermillion title bar (white text), light red body | Caveats, assumption violations   |
+| `intuitionbox[Title]`| Green title bar (white text), light green body | Intuition statements             |
 
 ## Quarto CSS Classes
 

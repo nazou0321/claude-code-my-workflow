@@ -165,48 +165,57 @@
 \tcbset{
   beamerbase/.style={
     enhanced,
-    boxrule=0pt,
-    leftrule=3.5pt,
+    boxrule=0.4pt,
     arc=2pt,
-    left=7pt, right=7pt, top=4pt, bottom=4pt,
+    left=6pt, right=6pt, top=3pt, bottom=4pt,
     fonttitle=\bfseries\small,
+    attach boxed title to top left={yshift=-0.1mm},
+    boxed title style={
+      arc=2pt,
+      boxrule=0pt,
+      left=6pt, right=6pt, top=3pt, bottom=3pt,
+    },
     before upper={\setlength\parindent{0pt}\small},
   }
 }
 
-% Key point box (navy)
+% Key point box — dark navy title bar, white title text, light blue body
 \newtcolorbox{keybox}[1][Key Point]{
   beamerbase,
   colback=bathnav!8,
   colframe=bathnav,
-  coltitle=bathnav,
+  colbacktitle=bathnav,
+  coltitle=white,
   title={#1},
 }
 
-% Paper example box (orange)
+% Paper example box — dark orange title bar, white title text, light orange body
 \newtcolorbox{examplebox}[1][Example]{
   beamerbase,
-  colback=okabeorange!10,
-  colframe=okabeorange,
-  coltitle=okabeorange!80!black,
+  colback=okabeorange!12,
+  colframe=okabeorange!80!black,
+  colbacktitle=okabeorange!85!black,
+  coltitle=white,
   title={#1},
 }
 
-% Warning / caveat box (vermillion)
+% Warning / caveat box — vermillion title bar, white title text, light red body
 \newtcolorbox{warningbox}[1][Caution]{
   beamerbase,
   colback=okabevermillion!10,
   colframe=okabevermillion,
-  coltitle=okabevermillion!80!black,
+  colbacktitle=okabevermillion,
+  coltitle=white,
   title={#1},
 }
 
-% Intuition box (green)
+% Intuition box — green title bar, white title text, light green body
 \newtcolorbox{intuitionbox}[1][Intuition]{
   beamerbase,
   colback=okabegreen!10,
   colframe=okabegreen,
-  coltitle=okabegreen!70!black,
+  colbacktitle=okabegreen,
+  coltitle=white,
   title={#1},
 }
 
