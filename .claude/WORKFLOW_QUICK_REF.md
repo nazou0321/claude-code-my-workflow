@@ -48,26 +48,23 @@ Repeat
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-Negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- **Paths:** Relative paths everywhere. STATA: `global projectdir` at top, never `/Users/...`
+- **Seed:** `set seed 12345` before any bootstrap or simulation in STATA
+- **Figures:** White background, labeled axes, exported as `.pdf` or `.eps`. Okabe-Ito palette mandatory (no red/green combos)
+- **Theme:** Dark navy headers (`#003B6F`), black body text — colorblind-safe throughout
+- **Replication fidelity:** STATA code must implement exactly what slides describe (same estimator, same SE method, same sample)
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
-
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
+**Visual:** Polished, publication-ready — no draft-quality output ships
+**Reporting:** Structured and precise. High-level summary by default; details available on request.
 **Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
+**Replication:** Strict — code must match slides exactly; flag near-misses
+**Check-in frequency:** More frequent in early sessions while learning the workflow; reduce as confidence grows
 
 ---
 

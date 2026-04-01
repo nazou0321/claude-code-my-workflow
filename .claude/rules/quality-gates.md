@@ -45,6 +45,19 @@ paths:
 | Critical | Undefined citation | -15 |
 | Critical | Overfull hbox > 10pt | -10 |
 
+## STATA Do-files (.do)
+
+| Severity | Issue | Deduction |
+|----------|-------|-----------|
+| Critical | Do-file fails to run end-to-end | -100 |
+| Critical | Hardcoded absolute paths | -20 |
+| Critical | Code implements different estimator than slides describe | -15 |
+| Major | Missing `set seed` before bootstrap/simulation | -10 |
+| Major | No `log using` for reproducibility | -10 |
+| Major | Figures or tables not saved (screen-only output) | -5 |
+| Major | Figures not using Okabe-Ito colorblind-safe palette | -5 |
+| Minor | Missing section-divider comments | -3 |
+
 ## Enforcement
 
 - **Score < 80:** Block commit. List blocking issues.
@@ -62,6 +75,6 @@ Save to `quality_reports/merges/YYYY-MM-DD_[branch-name].md`.
 
 | Quantity | Tolerance | Rationale |
 |----------|-----------|-----------|
-| Point estimates | [e.g., 1e-6] | [Numerical precision] |
-| Standard errors | [e.g., 1e-4] | [MC variability] |
-| Coverage rates | [e.g., +/- 0.01] | [MC with B reps] |
+| Point estimates | ±1e-4 | Numerical precision in STATA replication |
+| Standard errors | ±1e-3 | Bootstrap/MC variability |
+| Coverage rates | ±0.01 | MC with finite simulation draws |

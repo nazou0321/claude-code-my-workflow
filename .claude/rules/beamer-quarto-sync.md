@@ -14,12 +14,16 @@ When you modify a Beamer `.tex` file, you MUST also apply the equivalent change 
 
 ## Lecture Mapping
 
-<!-- Customize this table for your lectures -->
+<!-- Quarto deferred: all Quarto entries stay "--" until web publishing is activated -->
 | Lecture | Beamer | Quarto |
 |---------|--------|--------|
-| 1 | `Slides/Lecture1_Topic.tex` | `Quarto/Lecture1_Topic.qmd` |
-| 2 | `Slides/Lecture2_Topic.tex` | `Quarto/Lecture2_Topic.qmd` |
-<!-- Add rows as you create lectures -->
+| D1A: Lab Exp + RCT | `Slides/Lecture_D1A_ExpRCT.tex` | -- |
+| D1B: Lab (Settele 2022) | `Slides/Lab_D1B_Settele.tex` | -- |
+| D2A: RDD + DiD | `Slides/Lecture_D2A_RDD_DiD.tex` | -- |
+| D2B: Lab (Braghieri 2022) | `Slides/Lab_D2B_Braghieri.tex` | -- |
+| D3A: IV + PSM | `Slides/Lecture_D3A_IV_PSM.tex` | -- |
+| D3B: Lab (Aghion 2013) | `Slides/Lab_D3B_Aghion.tex` | -- |
+<!-- When activating Quarto: add .qmd path and set sync rule to fire -->
 
 ## Workflow (Every Time)
 
