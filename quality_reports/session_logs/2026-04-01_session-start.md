@@ -50,12 +50,19 @@ Configure the forked pedrohcgs/claude-code-my-workflow template for the MN52233 
 - `Slides/Lecture_D1A_ExpRCT.tex` — 56 slides, 7 sections, all citations resolved
 **Compile note:** No local LaTeX — user uses Overleaf. Syntax checks pass (frames balanced, citations resolved).
 
+## Post-Implementation Fixes
+
+- Fixed tcolorbox title readability: switched from colored text on light background to solid colored title bar with white text (all four box types)
+- Updated author name on title slide: `[Your Name]` → `Na Zou`
+- Updated CLAUDE.md Beamer environments table with final box designs
+- All changes committed and pushed to GitHub; user imported project into Overleaf via GitHub sync
+
 ## Open Questions / Blockers
 
-- [ ] User has not yet compiled in Overleaf — may need minor theme tweaks after first render
+- [ ] Overleaf compilation not yet verified end-to-end by user (layout tweaks may be needed)
 
 ## Next Steps
 
-- [ ] User compiles D1A in Overleaf; report any layout issues
-- [ ] Build STATA replication do-file: `Labs/Lab_D1B_Settele2022.do`
-- [ ] Update CLAUDE.md Beamer environments table once first lecture theme is confirmed
+- [ ] Build STATA replication do-file: `Labs/Lab_D1B_Settele2022.do` (Settele 2022)
+- [ ] Build remaining 5 lecture/lab decks (D1B, D2A, D2B, D3A, D3B)
+- [ ] Consider installing MacTeX locally to enable `/compile-latex` skill
