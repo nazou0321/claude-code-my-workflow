@@ -57,6 +57,13 @@ Configure the forked pedrohcgs/claude-code-my-workflow template for the MN52233 
 - Updated CLAUDE.md Beamer environments table with final box designs
 - All changes committed and pushed to GitHub; user imported project into Overleaf via GitHub sync
 
+## 2026-04-12: D1B Lab Slides
+
+**Task:** Create `Slides/Lab_D1B_Settele.tex` — lab slides for Settele (2022).
+**User spec:** Full STATA code blocks; ATE only (randomization check + main OLS); data pre-loaded on shared drive.
+**Outcome:** File created. ~34 slides across 3 sections: The Paper (7), Research Design (8), Replication (13). All frames balanced, no `\pause`, citations resolve to `Settele2022_gender`, `Stantcheva2023_surveys`, `Braghieri2022_socialmedia`. STATA code uses consistent variable names (`treat`, `policy_index`, `belief_pre/post`, demographics). Verification: syntax check only (no local LaTeX).
+**Plan:** `quality_reports/plans/sunny-weaving-perlis.md` (COMPLETED).
+
 ## Open Questions / Blockers
 
 - [ ] Overleaf compilation not yet verified end-to-end by user (layout tweaks may be needed)
@@ -66,3 +73,18 @@ Configure the forked pedrohcgs/claude-code-my-workflow template for the MN52233 
 - [ ] Build STATA replication do-file: `Labs/Lab_D1B_Settele2022.do` (Settele 2022)
 - [ ] Build remaining 5 lecture/lab decks (D1B, D2A, D2B, D3A, D3B)
 - [ ] Consider installing MacTeX locally to enable `/compile-latex` skill
+
+
+---
+**Context compaction (auto) at 10:54**
+Check git log and quality_reports/plans/ for current state.
+
+
+---
+**Context compaction (auto) at 16:30**
+Check git log and quality_reports/plans/ for current state.
+
+
+---
+**Context compaction (auto) at 11:08**
+Check git log and quality_reports/plans/ for current state.
